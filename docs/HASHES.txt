@@ -1,0 +1,15 @@
+Hashes de referencia (SHA-256) de artefactos verificados. No contienen datos del dispositivo.
+
+Copias de seguridad del Mi A2 Lite 4 GB (en el PC, fuera del repositorio):
+userdata.img        556c7ea79f7d50da4e8a67d48fb6c3504b7cd979cb9e958217f544e4f5b75373  (54819536384 bytes)
+gpt_primario.bin    fc5883ad4c9cab925e5a6b208e1bd47134511630b15daa2cc1a1f85fc02a3d95  (17408 bytes)
+gpt_secundario.bin  f62291d4b58170b03c71c35bd999aa3376557770737f0c7a02cb2080e3741b37  (16896 bytes)
+
+Raíz de iOS 16.7.16 (20H392) construida con mkiosroot.sh y sweet-root-tweaks.py:
+ios16-root.img      12438805beabd6cfaa37b7eeb478a600b27a3760814e5e4f0aef0ef8b745f1d6
+ios16-root.simg     1d2a50cf6130275625989535d2a6867362a09b49a1144143940ff8e438ae2685
+
+Kernel de referencia (CI proxer05/ios-vince, ejecución 40964379162, 0194):
+kernel.development.vince  010d54d08824cef3e5d28ae40ba553b36ae73469d319a26c1df4f024e8d71212
+Kernel de alimentación (CI 40944810745, 0190):
+kernel.development.vince  cf464faa3b28090c6c04591c1f74a914fdb086482f3bd9194d5b2f67676b2d94

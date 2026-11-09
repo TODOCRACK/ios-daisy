@@ -1,0 +1,18 @@
+--- a/shim/mmu.c	2026-11-03 17:43:57.000000000 +0000
++++ b/shim/mmu.c	2026-11-08 13:48:19.154931160 +0000
+@@ -93,9 +93,12 @@
+ 		uint64_t base_pa = (uint64_t)i * (1UL << 30);
+ 
+ 		if (i == 0) {
+-			/* GB 0: All MMIO */
+-			for (int j = 0; j < NENT; j++)
+-				l2_tbl[j] = (base_pa + (uint64_t)j * BLK_SIZE) | DEV_FLAGS | D_BLOCK;
++			/* GB 0: MMIO below 0x10000000; RAM from 0x10000000 (Mi A2 Lite 4 GB: DRAM starts there).
++			 * The shim itself is loaded at 0x10080000, so that range must be normal, executable memory. */
++			for (int j = 0; j < NENT; j++) {
++				uint64_t fl = (j >= 128) ? WB_FLAGS : DEV_FLAGS;
++				l2_tbl[j] = (base_pa + (uint64_t)j * BLK_SIZE) | fl | D_BLOCK;
++			}
+ 		} else if (i == 1 || i == 3) {
+ 			/* GB 1 & GB 3: System RAM */
+ 			for (int j = 0; j < NENT; j++)
