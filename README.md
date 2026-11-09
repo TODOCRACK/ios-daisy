@@ -1,7 +1,7 @@
 # ios-daisy-tests
 
-Bring-up experimental de iOS 16.7.16 en el Xiaomi Mi A2 Lite (daisy) de **4 GB**, con
-un shim de arranque propio y el kernel XNU de la línea vince (CI de proxer05).
+Bring-up experimental de iOS 16.7.16 en el Xiaomi Mi A2 Lite/Redmi 6 Pro (daisy) de **4 GB**, con
+un shim de arranque propio y el kernel XNU de la línea vince (CI de proxer05). :))
 Solo se carga con `fastboot boot`, salvo la escritura de la raíz de iOS en `userdata`.
 
 **Advertencia:** la raíz de iOS ocupa `userdata`, así que Android no está en el móvil.
