@@ -6,12 +6,9 @@ Xiaomi Redmi 6 Pro (Daisy / Qualcomm MSM8953 Snapdragon 625), targeting iOS 16
 
 The actual REPO where i'm working on updates is on private (for now) :P
 
-Pruebas de bring-up de un shim de arranque para el **Xiaomi Mi A2 Lite (daisy, MSM8953)**,
-con la intención de hacer funcionar iOS 16 mediante un kernel XNU. 
+Pruebas de bring-up de un shim de arranque para el **Xiaomi Mi A2 Lite (daisy, MSM8953)** de **4 GB**,
+con la intención de hacer funcionar iOS 16 mediante un kernel XNU con un shim de arranque propio y el kernel XNU de la línea vince (CI de proxer05). :))
 **Estado: experimental. No es un sistema operativo estable ni usable, puede dejar tu móvil como un ladrillo :P.**
-
-Bring-up experimental de iOS 16.7.16 en el Xiaomi Mi A2 Lite/Redmi 6 Pro (daisy) de **4 GB**, con
-un shim de arranque propio y el kernel XNU de la línea vince (CI de proxer05). :))
 
 Solo se carga con `fastboot boot`, salvo la escritura de la raíz de iOS en `userdata`.
 
