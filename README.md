@@ -1,4 +1,4 @@
-# ios-daisy-tests
+# ios-daisy (En versión alpha)
 
 (Dame creditos si haces uso del REPO porfis, gracias <3)
 
