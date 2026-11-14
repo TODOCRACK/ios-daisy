@@ -26,7 +26,7 @@ de terceros sin verificar su hash.
 | Kernel XNU monta la raíz de iOS desde userdata | OK (pantalla de bloqueo) |
 | Táctil: desbloqueo y navegación por Ajustes, cambio de idioma | OK, lento e irregular |
 | Imagen de 8 núcleos (cpus=8) | Arranca tras más de 10 minutos; no ha sido medida |
-| Brillo | No implementado (sin driver de retroiluminación) |
+| Brillo | No implementado (sin driver de retroiluminación, trabajando en ello por el bien de nuestros ojos) |
 | Aceleración GPU | No implementada |
 | Tarjeta SD como almacenamiento | No: el controlador no genera comandos |
 
